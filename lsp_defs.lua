@@ -35,7 +35,6 @@
 ---@field apply? fun(self:CardSleeves.Sleeve, sleeve:Card) Performs actions upon starting a run. Overriding this will also override default application of values in `config`!
 ---@field calculate? fun(self:CardSleeves.Sleeve, sleeve:Card, context:CalcContext):table?, boolean? Defines behavior during gameplay.
 ---
----@deprecated
 ---@field trigger_effect? function Deprecated, use a calculate method instead
 ---@overload fun(self:CardSleeves.Sleeve):CardSleeves.Sleeve
 CardSleeves.Sleeve = setmetatable({}, {
